@@ -5,16 +5,17 @@
 
 UserDB.publish.xml 
 // Data source should be added
-<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup>
-    <IncludeCompositeObjects>True</IncludeCompositeObjects>
-    <TargetDatabaseName>UserDB</TargetDatabaseName>
-    <DeployScriptFileName>UserDB.sql</DeployScriptFileName>
-    <TargetConnectionString>Data Source= ;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Connect Timeout=60;Encrypt=False;Trust Server Certificate=True;Command Timeout=0</TargetConnectionString>
-    <ProfileVersionNumber>1</ProfileVersionNumber>
-  </PropertyGroup>
-</Project>
+
+	<?xml version="1.0" encoding="utf-8"?>
+	<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	  <PropertyGroup>
+	    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+	    <TargetDatabaseName>UserDB</TargetDatabaseName>
+	    <DeployScriptFileName>UserDB.sql</DeployScriptFileName>
+	    <TargetConnectionString>Data Source= ;Integrated Security=True;Persist Security Info=False;Pooling=False;Multiple Active Result Sets=False;Connect Timeout=60;Encrypt=False;Trust Server Certificate=True;Command Timeout=0</TargetConnectionString>
+	    <ProfileVersionNumber>1</ProfileVersionNumber>
+	  </PropertyGroup>
+	</Project>
 
 
 Script.PostDeployment.sql
