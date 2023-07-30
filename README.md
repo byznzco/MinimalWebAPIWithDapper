@@ -20,24 +20,25 @@ UserDB.publish.xml
 
 Script.PostDeployment.sql
 
-IF NOT EXISTS (SELECT 1 FROM DBO.[USER])
-BEGIN 
-	INSERT INTO DBO.[User] (FirstName, LastName)
-	VALUES
-		('Ada', 'Lovelace'),
-		('Beyza', 'Salı'),
-		('Elif', 'Beta'),
-		('Ufuk', 'Ulusoy'),
-    ('İrem', 'Tatlı');
-END
+	IF NOT EXISTS (SELECT 1 FROM DBO.[USER])
+	BEGIN 
+		INSERT INTO DBO.[User] (FirstName, LastName)
+		VALUES
+			('Ada', 'Lovelace'),
+			('Beyza', 'Salı'),
+			('Elif', 'Beta'),
+			('Ufuk', 'Ulusoy'),
+	    ('İrem', 'Tatlı');
+	END
 
--Table-
-CREATE TABLE [dbo].[User]
-(
-	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
-	[FirstName] NVARCHAR(50) NOT NULL,
-	[LastName] NVARCHAR(50) NOT NULL
-)
+Table
+
+	CREATE TABLE [dbo].[User]
+	(
+		[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+		[FirstName] NVARCHAR(50) NOT NULL,
+		[LastName] NVARCHAR(50) NOT NULL
+	)	
 
 Stored Procedures
 
