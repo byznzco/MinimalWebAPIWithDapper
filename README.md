@@ -30,7 +30,7 @@ BEGIN
     ('İrem', 'Tatlı');
 END
 
-Table
+-Table-
 CREATE TABLE [dbo].[User]
 (
 	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
@@ -40,9 +40,9 @@ CREATE TABLE [dbo].[User]
 
 Stored Procedures
 
-EXEC_DELETE_USER.sql
-EXEC_UPDATE_USER.sql
-EXEC_INSERT_USER.sql
-EXEC_GET_USER.sql
-EXEC_GET_ALL_USERS.sql
+- EXEC_DELETE_USER.sql
+- EXEC_UPDATE_USER.sql
+- EXEC_INSERT_USER.sql
+- EXEC_GET_USER.sql
+- EXEC_GET_ALL_USERS.sql
 
